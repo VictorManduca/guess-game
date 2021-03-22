@@ -1,6 +1,6 @@
 # Guess Game
 
-## Roles
+## Rules
     - Implementar um jogo de adivinhação de números primos. O intervalo válido é de 1 a 20.000.
     - O computador é quem adivinha. O usuário deve indicar pistas para que o computador chegue no número que o usuário pensou.  
       Para facilitar para o usuário, ao iniciar a partida o aplicativo pode exibir a lista (em tabela, talvez) de todos os primos neste intervalo.  
