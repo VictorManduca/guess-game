@@ -1,4 +1,4 @@
-import { getConnection } from 'typeorm'
+import { getConnection, getManager } from 'typeorm'
 
 import { Game } from '../Models/Entities/Game'
 import { User } from '../Models/Entities/User'
@@ -25,5 +25,10 @@ export default class GameRepository {
 			.execute()
 
 		return
+	}
+
+	public selectRank() {
+		return getManager()
+			.query('SELECT time, guesses, number, name FROM game INNER JOIN user ON userId = user.id ORDER BY time ASC')
 	}
 }
