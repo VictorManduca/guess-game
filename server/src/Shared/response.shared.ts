@@ -11,3 +11,7 @@ export function emptyOk(res: Response): Response {
 export function created(res: Response): Response {
 	return res.status(201).send()
 }
+
+export function badRequest(res: Response, error: unknown): Response {
+	return res.status(400).json({ error: error })
+}
