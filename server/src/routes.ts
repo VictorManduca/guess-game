@@ -9,6 +9,7 @@ const gameController: GameController = new GameController()
 const primeController: PrimeController = new PrimeController()
 
 router.get('/rank', gameController.index)
+router.post('/game', gameController.createOrUpdate)
 router.get('/prime', primeController.index)
 
 export default router
