@@ -1,13 +1,19 @@
 import { Request, Response } from 'express'
 
 import GameRepository from '../Repository/game.repository'
-import { emptyOk, badRequest, created } from '../Shared/response.shared'
+import { ok, emptyOk, badRequest, created } from '../Shared/response.shared'
 import UserRepository from '../Repository/user.repository'
 import { isFieldsValid, isUserRegistered } from '../Shared/validator.shared'
 
 export default class GameController {
-	public index(req: Request, res: Response): Response {
-		return emptyOk(res)
+	public async index(req: Request, res: Response) {
+		try {
+			const gameRepository: GameRepository = new GameRepository
+			const rank = await gameRepository.selectRank()
+			return ok(res, rank)
+		} catch (error) {
+			return badRequest(res, error)
+		}
 	}
 
 	public async createOrUpdate(req: Request, res: Response) {
