@@ -29,12 +29,13 @@ export function findAllPrimeNumbers() {
 }
 
 function multiplyDigits(numberParam: number) {
-		const arr = []
+	const arr = []
 
-		for(let number of String(numberParam)) {
-			if (number !== '0')
-				arr.push(Number(number))
+	for (const number of String(numberParam)) {
+		if (number !== '0') {
+			arr.push(Number(number))
 		}
+	}
 
-		return arr.reduce((p, v) => p * v)
+	return arr.reduce((p, v) => p * v)
 }
