@@ -11,6 +11,6 @@ module.exports = {
 	rules: {
 		'semi': ['error', 'never'],
 		'quotes': ['error', 'single'],
-		'curly': ['error', 'multi']
+		'curly': ['error', 'all']
 	}
 }
