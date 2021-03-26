@@ -1,13 +1,7 @@
 <template src="../assets/templates/home.html"></template>
 
 <script>
-import { proceed } from "../assets/scripts/home";
-import prime from "./prime";
-
 export default {
-  components: {
-    prime,
-  },
   data: () => {
     return {
       name: null,

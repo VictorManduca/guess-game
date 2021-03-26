@@ -37,7 +37,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/toast'
   ],
+
+  toast: {
+    position: 'top-right',
+    duration: 1500,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
