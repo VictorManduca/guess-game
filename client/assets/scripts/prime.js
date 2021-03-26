@@ -9,6 +9,7 @@ export async function tryCallPrimeNumbers() {
       return { prime: el.number }
     })
   } catch (error) {
+    this.$toast.error('Algo deu errado :(')
     throw new Error(error)
   }
 }

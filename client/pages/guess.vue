@@ -1,14 +1,23 @@
-<template src="../assets/templates/home.html"></template>
+<template src="../assets/templates/guess.html"></template>
 
 <script>
+import { guess, save, goBackHome } from "../assets/scripts/guess";
+
 export default {
   data: () => {
     return {
-      name: null,
+      sum: null,
+      prod: null,
+      mod: null,
+      message:
+        "Inclua as pistas nos campos acima e toque no botão para o bot advinhar",
+      isFinished: false,
     };
   },
   methods: {
-    proceed,
+    guess,
+    save,
+    goBackHome,
   },
 };
 </script>

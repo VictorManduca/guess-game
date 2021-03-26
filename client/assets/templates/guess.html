@@ -1,5 +1,25 @@
 <div>
   <div>
-    <p>alooooooo</p>
+    <label>Soma dos digitos</label>
+    <input type="text" v-model="sum" required>
+  </div>
+
+  <div>
+    <label>Produto dos digitos</label>
+    <input type="text" v-model="prod" required>
+  </div>
+
+  <div>
+    <label>Resto da divisão por 7</label>
+    <input type="text" v-model="mod" required>
+  </div>
+
+  <button type="button" v-on:click="guess">Advinhar</button>
+
+  <p>{{ message }}</p>
+
+  <div v-if="isFinished">
+    <button type="button" v-on:click="goBackHome">Voltar para o ínicio</button>
+    <button type="button" v-on:click="save">Salvar</button>
   </div>
 </div>
