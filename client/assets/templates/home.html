@@ -11,4 +11,10 @@
     <prime />
   </b-modal>
 
+  <b-button v-b-modal.modal-rank>Rank</b-button>
+
+  <b-modal hide-footer id="modal-rank" title="Rank ">
+    <b-table striped hover :items="items" :fields="fields"></b-table>
+  </b-modal>
+
 </div>

@@ -20,3 +20,7 @@ export function postGame(payload) {
     }
   })
 }
+
+export function getRank() {
+  return axios.get(`${environment.url}/rank`)
+}
