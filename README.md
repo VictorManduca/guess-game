@@ -30,5 +30,6 @@
   Agora basta executar `npm i && npm run dev` e o servidor irá iniciar na porta `8080`
 
 ## Para rodar o Frontend
-  Basta entrar na pasta `client` e executar `npm i && npm run dev`  
+  Basta entrar na pasta `client`, executar `npm i && npm run dev`  
+  Depois disso, basta acessar no nevegador de sua escolha: `localhost:3000`
   
