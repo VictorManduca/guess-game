@@ -14,3 +14,21 @@
   Elas podem ser aplicadas em qualquer ordem.  
   Em cada pista, o computador faz um chute, baseado nas informações que tem até o momento.  
   Também para cada chute, o usuário deve indicar se é menor, igual ou maior que o número pensado.  
+
+## Para rodar o Backend
+  Primeiro, será necessário criar o banco de dados.  
+  Para isso, execute: 
+  ```
+  docker pull mariadb
+  docker run --name game -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mariadb
+  docker exec -it game bash
+  mysql
+  create database game;
+  ```
+    
+  Entre na pasta `server` e execute `cat .env.example > .env`  
+  Agora basta executar `npm i && npm run dev` e o servidor irá iniciar na porta `8080`
+
+## Para rodar o Frontend
+  Basta entrar na pasta `client` e executar `npm i && npm run dev`  
+  
