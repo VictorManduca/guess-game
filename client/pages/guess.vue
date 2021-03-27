@@ -1,5 +1,10 @@
 <template src="../assets/templates/guess.html"></template>
 
+<style>
+@import "../assets/styles/default.css";
+@import "../assets/styles/guess.css";
+</style>
+
 <script>
 import { guess, save, goBackHome } from "../assets/scripts/guess";
 

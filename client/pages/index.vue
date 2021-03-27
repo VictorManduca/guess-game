@@ -1,5 +1,9 @@
 <template src="../assets/templates/home.html"></template>
 
+<style>
+@import "../assets/styles/default.css";
+</style>
+
 <script>
 import { proceed, tryShowRank } from "../assets/scripts/home";
 import prime from "./prime";

@@ -1,25 +1,25 @@
-<div>
-  <div>
+<div class="padding-top">
+  <div class="container">
     <label>Soma dos digitos</label>
     <input type="text" v-model="sum" required>
   </div>
 
-  <div>
+  <div class="mt-4 container">
     <label>Produto dos digitos</label>
     <input type="text" v-model="prod" required>
   </div>
 
-  <div>
+  <div class="mt-4 container">
     <label>Resto da divisão por 7</label>
     <input type="text" v-model="mod" required>
   </div>
 
-  <button type="button" v-on:click="guess">Advinhar</button>
+  <b-button class="mt-4" type="button" v-on:click="guess">Advinhar</b-button>
 
-  <p>{{ message }}</p>
+  <p class="mt-4">{{ message }}</p>
 
-  <div v-if="isFinished">
-    <button type="button" v-on:click="goBackHome">Voltar para o ínicio</button>
-    <button type="button" v-on:click="save">Salvar</button>
+  <div v-if="isFinished" class="mt-4 container">
+    <b-button class="mt-4 btn-custom" type="button" v-on:click="goBackHome">Voltar para o ínicio</b-button>
+    <b-button class="mt-4" type="button" v-on:click="save">Salvar</b-button>
   </div>
 </div>

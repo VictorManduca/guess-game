@@ -1,0 +1,42 @@
+button {
+  width: 10% !important;
+  table-layout: fixed;
+  border-collapse: initial;
+}
+
+.padding-top {
+  padding-top: 15%;
+}
+
+.custom-btn {
+  width: 35% !important;
+  margin-left: 50%;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+  button {
+    width: 10% !important;
+  }
+
+  .btn-custom {
+    width: 20%;
+    table-layout: fixed;
+    border-collapse: initial;
+  }
+
+  .padding-top {
+    padding-top: 25%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  button {
+    width: 70% !important;
+  }
+
+  .padding-top {
+    padding-top: 50%;
+  }
+}
+

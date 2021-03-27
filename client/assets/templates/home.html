@@ -1,20 +1,20 @@
-<div>
+<div class="padding-top">
   <div>
     <label>Nome</label>
     <input type="text" v-model="name" required>
   </div>
 
-  <b-button v-b-modal.modal-prime>Jogar</b-button>
+  <b-button class="mt-4" v-b-modal.modal-prime>Jogar</b-button>
 
   <b-modal hide-footer id="modal-prime" title="Lista de números primos de 1 a 20.000">
-    <button type="button" v-on:click="proceed">Prosseguir</button>
+    <b-button class="custom-btn" type="button" v-on:click="proceed">Prosseguir</b-button>
     <prime />
   </b-modal>
 
-  <b-button v-b-modal.modal-rank>Rank</b-button>
+  <b-button class="mt-4" v-b-modal.modal-rank>Rank</b-button>
 
   <b-modal hide-footer id="modal-rank" title="Rank ">
-    <b-table striped hover :items="items" :fields="fields"></b-table>
+    <b-table striped hover responsive :items="items" :fields="fields"></b-table>
   </b-modal>
 
 </div>

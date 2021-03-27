@@ -55,5 +55,5 @@ export async function save() {
 
 export function goBackHome() {
   localStorage.clear()
-  return this.$router.push({ name: 'index' })
+  return this.$router.go(0)
 }
