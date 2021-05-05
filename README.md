@@ -1,7 +1,7 @@
-# Guess Game
+# Guess Game :video_game:
   Um jogo de adivinhação de números primos.
 
-## Regras
+## Regras :page_with_curl:
   O intervalo válido é de 1 a 20.000.  
   O computador é quem adivinha.  
   O usuário deve indicar pistas para que o computador chegue no número que o usuário pensou.    
@@ -15,21 +15,16 @@
   Em cada pista, o computador faz um chute, baseado nas informações que tem até o momento.  
   Também para cada chute, o usuário deve indicar se é menor, igual ou maior que o número pensado.  
 
-## Para rodar o Backend
-  Primeiro, será necessário criar o banco de dados.  
-  Para isso, execute: 
-  ```
-  docker pull mariadb
-  docker run --name game -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mariadb
-  docker exec -it game bash
-  mysql
-  create database game;
-  ```
-    
-  Entre na pasta `server` e execute `cat .env.example > .env`  
-  Agora basta executar `npm i && npm run dev` e o servidor irá iniciar na porta `8080`
+## Instruções para rodar a aplicação :computer:
 
-## Para rodar o Frontend
-  Basta entrar na pasta `client`, executar `npm i && npm run dev`  
+### Backend
+  Basta ter o docker instalado e rodar o comando `make` dentro da pasta **server**
+  E pronto! :smile:
+
+### Frontend
+  Basta entrar na pasta **client**, executar `npm i && npm run dev`  
   Depois disso, basta acessar no nevegador de sua escolha: `localhost:3000`
   
+## Atenção :warning:
+  Caso esteja usando o sistema operacional Windows, para poder usar o comando `make`  
+  recomendo usar o [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
