@@ -1,5 +1,4 @@
 # Guess Game :video_game:
-  Um jogo de adivinhação de números primos.
 
 ## Regras :page_with_curl:
   O intervalo válido é de 1 a 20.000.  
