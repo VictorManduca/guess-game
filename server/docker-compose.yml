@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  server:
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+    links:
+      - database
+    command: ['npm', 'run', 'dev']
+  database:
+    image: mariadb:latest
+    container_name: 'game_database'
+    ports:
+      - 3306:3306
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./database/init.sql:/data/application/init.sql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: game
