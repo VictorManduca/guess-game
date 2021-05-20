@@ -1,4 +1,4 @@
-# Guess Game :video_game:
+<h1 align="center">Guess Game :video_game:</h1>
 
 ## Regras :page_with_curl:
   O intervalo válido é de 1 a 20.000.  
