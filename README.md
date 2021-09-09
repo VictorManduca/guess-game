@@ -23,7 +23,3 @@
 ### Frontend
   Basta entrar na pasta **client**, executar `npm i && npm run dev`  
   Depois disso, basta acessar no nevegador de sua escolha: `localhost:3000`
-  
-## Atenção :warning:
-  Caso esteja usando o sistema operacional Windows, para poder usar o comando `make`  
-  recomendo usar o [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
